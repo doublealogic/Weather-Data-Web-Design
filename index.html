@@ -13,43 +13,72 @@
   <body>
     <!-- Navigation Bar -->  
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Latitude</a>
+        <a class="navbar-brand" href="index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
     
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Plots
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Temperature</a>
+                <a class="dropdown-item" href="temperature_visualization.html">Temperature</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Humidity</a>
+                <a class="dropdown-item" href="humidity_visualization.html">Humidity</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Cloudiness</a>
+                <a class="dropdown-item" href="cloudiness_visualization.html">Cloudiness</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Wind Speed</a>
+                <a class="dropdown-item" href="windspeed_visualization.html">Wind Speed</a>
               </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Comparisons</a>
+                <a class="nav-link" href="comparisons.html">Comparisons</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Data</a>
+                <a class="nav-link" href="data.html">Data</a>
             </li>
           </ul>
         </div>
       </nav>
-    
-
+    <!-- Latitude Project Explanation Paragraphs-->
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Latitude!</h1>
+        <p class="lead">A Python and Weather API Project</p>
+        <hr class="my-4">
+        <p>This project used Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. It utilized citipy, a simple Python library, and the OpenWeatherMap API, to create a representative model of weather across world cities.</p>
+        <br>
+        <p>To start, I randomly selected at least 500 unique (non-repeat) cities based on latitude and longitude. Then I performed a weather check on each of the cities using a series of successive API calls. At the end, I printed logs of each city as it was being processed with the city number and city name.</p>
+        <br>
+        <p>After gathering the data, I displayed a series of scatter plots to showcase the following relationships:</p>
+        <ul>
+          <li>Temperature (F) vs. Latitude</li>
+          <li>Humidity (%) vs. Latitude</li>
+          <li>Cloudiness (%) vs. Latitude</li>
+          <li>Wind Speed (mph) vs. Latitude</li>
+        </ul>   
+        <p>After each plot I wrote my analyzations on each relationship.</p>
+        <br>
+        <p>Next, I ran a linear regression on each relationship, only this time separating them into Northern Hemisphere cities (greater than or equal to 0 degrees latitude) and Southern Hemisphere cities (less than 0 degrees latitude):</p> 
+        <ul>
+          <li>Northern Hemisphere - Temperature (F) vs. Latitude</li>
+          <li>Southern Hemisphere - Temperature (F) vs. Latitude</li>
+          <li>Northern Hemisphere - Humidity (%) vs. Latitude</li>
+          <li>Southern Hemisphere - Humidity (%) vs. Latitude</li>
+          <li>Northern Hemisphere - Cloudiness (%) vs. Latitude</li>
+          <li>Southern Hemisphere - Cloudiness (%) vs. Latitude</li>
+          <li>Northern Hemisphere - Wind Speed (mph) vs. Latitude</li>
+          <li>Southern Hemisphere - Wind Speed (mph) vs. Latitude</li>
+        </ul>   
+        <p>After each pair of plots I explained what the linear regression was modeling such as any relationships I noticed and any other analysis I saw.</p> 
+        <br>
+        <p>For all of the scatter plots above, I saved a CSV of all retrieved data and a PNG image for each scatter plot. These PNG images are all located in the Comparisons page for you to view and compare. You can view all the data from the CSV on the Data page.</p>           
+      </div>
+    </div>
+        
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

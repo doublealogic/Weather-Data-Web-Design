@@ -1,3 +1,9 @@
+@media (max-width: 576px) {
+  html body {
+    background: #F7F7F9;
+  }
+}
+
 
 /*!
 Below is the Bootswatch theme LUX
