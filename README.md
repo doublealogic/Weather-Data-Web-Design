@@ -9,3 +9,37 @@ The `assets` folder contains pictures of ten cities that were generated from my 
 Within the `Resources` folder, is the csv created out of the above search and holds the data for the above cities.
 
 Last, the `visualizations` folder holds graphs that displayed relationships between various weather aspects and latitude.
+
+### Website Requirements
+Below were the website requirements that I needed:
+
+The website must consist of 7 pages total, including:
+
+* A `landing page` containing:
+  * An explanation of the project.
+  * Links to each visualizations page. It would have a sidebar containing preview images of each plot, and clicking an image would take the user to that visualization.
+* Four `visualization pages`, each with:
+  * A descriptive title and heading tag.
+  * The plot/visualization itself for the selected comparison.
+  * A paragraph describing the plot and its significance.
+* A `"Comparisons" page` that:
+  * Contains all of the visualizations on the same page so one could easily visually compare them.
+  * Uses a Bootstrap grid for the visualizations.
+    * The grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.
+* A `"Data" page` that:
+  * Displays a responsive table that would contain the data used in my visualizations.
+    * The table needed to be a bootstrap table component.
+    * The data had to come from exporting my `.csv` file as HTML, or converting it to HTML.
+
+The website must, at the top of every page, have a navigation menu that:
+
+* Has the name of the site on the left of the nav which would allow users to return to the landing page from any page.
+* Contains a dropdown menu on the right of the navbar named `"Plots"` that provides a link to each individual visualization page.
+* Provides two more text links on the right: `"Comparisons,"` which links to the comparisons page, and `"Data,"` which links to the data page.
+* Is responsive (using media queries).
+
+Finally, the website had to be deployed to GitHub pages.
+
+### Additional Considerations
+
+I took some liberty in the visual aspects of the websites by using the Bootstrap Theme Lux from Bootswatch.
