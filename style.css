@@ -1,4 +1,4 @@
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   html body {
     background: #F7F7F9;
   }
@@ -10,9 +10,30 @@
   object-fit: cover;
 }
 
+.sidenav {
+  width: 220px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  margin-top: 100px !important;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 100px;}
+  .sidenav a {font-size: 18px;}
+}
+
 .table-container img {
-  height: 150px;
+  height: 70px;
   border: 5px solid black;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
 }
 
 
