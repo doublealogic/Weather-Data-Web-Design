@@ -4,6 +4,14 @@
   }
 }
 
+.carousel-inner img {
+  /*! width: 200px; width of container */
+  height: 560px; /* height of container */
+  object-fit: cover;
+}
+
+
+
 
 /*!
 Below is the Bootswatch theme LUX
