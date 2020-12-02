@@ -43,6 +43,30 @@
           </ul>
         </div>
       </nav>
+
+      <!-- Humidity Graphs and Explanations-->
+      <div class="col-md-12">
+        <div class="jumbotron">
+          <h1 class="text-center display-4">Humidity Plots</h1>
+          <img src="visualizations/Latitude_vs_Humidity_Plot.png" alt="Latitude vs Humidity Plot" class="rounded mx-auto d-block">
+          <hr class="my-4">
+          <p class="lead">It was interesting that the majority of the cities had at least 40% humidity. I would've thought there would've been an even spread. This could suggest that most of the cities on Earth are at least moderately humid. We'd have to pull more cities to see if this is a trend.</p>
+          <br>
+          <div class="row">
+            <figure class="col-6">
+              <img src="visualizations/Humidity_vs_Lat_Regression_N_Hemisphere.png" alt="N Hemisphere Humidity Plot" class="img-fluid">
+            </figure>
+
+            <figure class="col-6">
+              <img src="visualizations/Humidity_vs_Lat_Regression_S_Hemisphere.png" alt="S Hemisphere Humidity Plot" class="img-fluid">
+            </figure>
+          </div>
+          <hr class="my-4">
+          <p class="lead">The Northern Hemisphere humidity graph has a very weak positive correlation between Humidity and Latitude, which would suggest that we cannot determinate that a relationship exists between humidity and latitude in Northern Hemisphere cities from this data.</p>
+          <br>
+          <p class="lead">The Southern Hemisphere humidity graph also has a very weak positive correlation between Humidity and Latitude, which would suggest that we cannot determinate that a relationship exists between humidity and latitude in Southern Hemisphere cities from this data.</p>
+        </div>
+      </div>
           
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
