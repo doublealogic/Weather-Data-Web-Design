@@ -43,6 +43,30 @@
           </ul>
         </div>
       </nav>
+
+      <!-- Windspeed Graphs and Explanations-->
+      <div class="col-md-12">
+        <div class="jumbotron">
+          <h1 class="text-center display-4">Windspeed Plots</h1>
+          <img src="visualizations/Latitude_vs_Wind_Speed_Plot.png" alt="Latitude vs Wind Speed Plot" class="rounded mx-auto d-block">
+          <hr class="my-4">
+          <p class="lead">Many of the cities in this dataset also had wind 20 mph or lower. A category 1 Hurricane's winds start at around 74 mph so we are well under that and most of the winds around these cities are rather mild by comparison.</p>
+          <br>
+          <div class="row">
+            <figure class="col-6">
+              <img src="visualizations/Windspeed_vs_Lat_Regression_N_Hemisphere.png" alt="N Hemisphere Windspeed Plot" class="img-fluid">
+            </figure>
+
+            <figure class="col-6">
+              <img src="visualizations/Windspeed_vs_Lat_Regression_S_Hemisphere.png" alt="S Hemisphere Windspeed Plot" class="img-fluid">
+            </figure>
+          </div>
+          <hr class="my-4">
+          <p class="lead">The Northern Hemisphere windspeed graph has a very weak positive correlation between Windspeed and Latitude, which would suggest that we cannot determinate that a relationship exists between windspeed and latitude in Northern Hemisphere cities from this data.</p>
+          <br>
+          <p class="lead">The Southern Hemisphere windspeed graph has a very weak negative correlation between Windspeed and Latitude, which would suggest that we cannot determinate that a relationship exists between windspeed and latitude in Southern Hemisphere cities from this data.</p>
+        </div>
+      </div>
           
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
