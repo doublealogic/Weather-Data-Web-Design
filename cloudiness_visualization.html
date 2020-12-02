@@ -43,6 +43,30 @@
           </ul>
         </div>
       </nav>
+
+    <!-- Cloudiness Graphs and Explanations-->
+    <div class="col-md-12">
+      <div class="jumbotron">
+        <h1 class="text-center display-4">Cloudiness Plots</h1>
+        <img src="visualizations/Latitude_vs_Cloudiness_Plot.png" alt="Latitude vs Cloudiness Plot" class="rounded mx-auto d-block">
+        <hr class="my-4">
+        <p class="lead">It doesn't matter where in the world a city is geographically, you can find all levels of cloudiness anywhere in the world. There does seem to be a lot of cities that cluste around certain levels of cloudiness, but other than that there doesn't look to be a relationship between Latitude and Cloudiness levels.</p>
+        <br>
+        <div class="row">
+          <figure class="col-6">
+            <img src="visualizations/Cloudiness_vs_Lat_Regression_N_Hemisphere.png" alt="N Hemisphere Cloudiness Plot" class="img-fluid">
+          </figure>
+
+          <figure class="col-6">
+            <img src="visualizations/Cloudiness_vs_Lat_Regression_S_Hemisphere.png" alt="S Hemisphere Cloudiness Plot" class="img-fluid">
+          </figure>
+        </div>
+        <hr class="my-4">
+        <p class="lead">The Northern Hemisphere cloudiness graph has a very weak positive correlation between Cloudiness and Latitude, which would suggest that we cannot determinate that a relationship exists between cloudiness and latitude in Northern Hemisphere cities from this data.</p>
+        <br>
+        <p class="lead">The Southern Hemisphere cloudiness graph has a very weak positive correlation between Cloudiness and Latitude, which would suggest that we cannot determinate that a relationship exists between cloudiness and latitude in Southern Hemisphere cities from this data.</p>
+      </div>
+    </div>
           
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
