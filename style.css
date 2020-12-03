@@ -10,6 +10,11 @@
   object-fit: cover;
 }
 
+.carousel-caption h5 {
+  color:white;
+  background-color: var(--gray-dark);
+}
+
 .sidenav {
   width: 220px;
   position: fixed;
