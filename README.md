@@ -18,19 +18,19 @@ The website must consist of 7 pages total, including:
 * A `landing page` containing:
   * An explanation of the project.
   * Links to each visualizations page. It would have a sidebar containing preview images of each plot, and clicking an image would take the user to that visualization.
-![Landing Page](assets/Front_Page_Preview.png)
+![Landing Page](./assets/Front_Page_Preview.PNG)
 
 * Four `visualization pages`, each with:
   * A descriptive title and heading tag.
   * The plot/visualization itself for the selected comparison.
   * A paragraph describing the plot and its significance.
-![Temp Visualization Page](assets/Plot_Page_Preview.png)
+![Temp Visualization Page](./assets/Plot_Page_Preview.PNG)
 
 * A `"Comparisons" page` that:
   * Contains all of the visualizations on the same page so one could easily visually compare them.
   * Uses a Bootstrap grid for the visualizations.
     * The grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.
-![Comparisons Page](assets/Comparisons_Page_Preview.png)
+![Comparisons Page](./assets/Comparisons_Page_Preview.PNG)
 
 * A `"Data" page` that:
   * Displays a responsive table that would contain the data used in my visualizations.
